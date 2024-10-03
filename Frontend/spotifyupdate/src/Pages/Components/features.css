@@ -1,0 +1,21 @@
+.features-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  

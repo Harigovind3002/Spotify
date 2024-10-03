@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import LandingPage from './Pages/LandingPage/LandingPage';
+import LoginPage from './Pages/LoginPage/LoginPage';
+import SpotifyApp from './Pages/SpotifyApp/SpotifyApp';
+import SpotifyPlayer from './Pages/SpotifyPlayer/SpotifyPlayer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
+    <Router>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
+        <Route path="/SpotifyApp" element={<SpotifyApp />} />
+        <Route path="/SpotifyPlayer" element={<SpotifyPlayer />} />
+        </Routes>
       </header>
     </div>
+    </Router>
   );
 }
 
